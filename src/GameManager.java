@@ -32,9 +32,11 @@ public class GameManager {
 		System.out.println("Valid actions: attack, look, "
 				+ "\ngo, leave, take, pickup");
 	}
+	//saves game state
 	public static void saveGame(){
 		
 	}
+	//Creates char
 	private static void createChar(){
 		System.out.println("Enter your characters name");
 		String name=keyboard.next();
@@ -42,5 +44,10 @@ public class GameManager {
 		//String race=Keyboard.next();
 		Player p=new Player(name, "human", 50, 100, 0);
 		p.printCharData();
+	}
+	private static void runCombatEngine(){
+		CombatEngine.initCombat();
+		CombatEngine.runCombat();
+		CombatEngine.printCombatResult();
 	}
 }

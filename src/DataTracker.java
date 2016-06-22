@@ -1,6 +1,6 @@
 
 public class DataTracker {
-	public DataTracker(){
+	public DataTracker(Player p){
 		
 	}
 	public void getHp(){
@@ -15,5 +15,7 @@ public class DataTracker {
 	public void showEnemieskilled(){
 		
 	}
-	
+	public void showDeaths(){
+		
+	}
 }

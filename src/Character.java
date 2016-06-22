@@ -8,6 +8,9 @@ public abstract class Character {
 	private int baseDefense;
 	private boolean canAttack=true;
 	private boolean isAlive=true;
+	private int location;
+	
+
 	public Character(String name, String type, int baseDamage, int baseHealth, int baseDefense) {
 		this.name=name;
 		this.baseDamage = baseDamage;
@@ -73,8 +76,15 @@ public abstract class Character {
 	public void setCanAttack(boolean canAttack) {
 		this.canAttack = canAttack;
 	}
+	public int getLocation() {
+		return location;
+	}
+
+	public void setLocation(int location) {
+		this.location = location;
+	}
 	public void death(){
-		
+		System.out.println(name+" "+type+"has died");
 	}
 	public void printCharData(){
 		System.out.println("Name: "+name+"\nDamage: "+baseDamage
