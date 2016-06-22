@@ -15,7 +15,7 @@ public  Enemy(String name, String type, int baseDamage, int baseHealth, int base
 	public void setSpawnRate(int spawnRate) {
 		this.spawnRate = spawnRate;
 	}
-	public void spawn(){
+	public void spawnEnemies(){
 		
 	}
 	public boolean getCanAttkPlyr() {

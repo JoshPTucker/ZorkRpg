@@ -16,7 +16,7 @@ public abstract class Item {
 	public String getType() {
 		return type;
 	}
-
+	
 	public void setType(String type) {
 		this.type = type;
 	}
@@ -51,5 +51,8 @@ public abstract class Item {
 
 	public void setDurability(int durability) {
 		this.durability = durability;
+	}
+	public void spawnItems(){
+		
 	}
 }

@@ -17,7 +17,13 @@ public class Player extends Character{
 	public void move(){
 		
 	}
+	public void escapeArea(){
+		
+	}
 	public void takeItem(){
+		
+	}
+	public void dropItem(){
 		
 	}
 	public void displayHealth(){
