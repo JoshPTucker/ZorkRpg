@@ -1,8 +1,8 @@
 import java.util.Random;
-public class MapGenerator {
+public class WorldGenerator {
 	private int amountOfRooms;
 	
-	public  MapGenerator(int amtORooms){
+	public  WorldGenerator(int amtORooms){
 		this.amountOfRooms=amtORooms;
 	}
 
@@ -14,7 +14,7 @@ public class MapGenerator {
 		this.amountOfRooms = amountOfRooms;
 	}
 	
-	public static void generateMap(){
+	public static void generateWorld(){
 	Random rand=new Random();
 	}
 }

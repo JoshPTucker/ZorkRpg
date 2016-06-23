@@ -65,7 +65,7 @@ public abstract class Character {
 	public void setAlive(boolean isAlive) {
 		this.isAlive = isAlive;
 	}
-	public void attack(){
+	public static void attack(String enemy){
 		
 	}
 
@@ -83,11 +83,14 @@ public abstract class Character {
 	public void setLocation(int location) {
 		this.location = location;
 	}
-	public void death(){
-		System.out.println(name+" "+type+"has died");
+	public static String printDeathMsg(String name){
+		
+		return name+"Has died";
+		
 	}
-	public void printCharData(){
-		System.out.println("Name: "+name+"\nDamage: "+baseDamage
-				+ "\nHealth: "+ baseHealth);
+	public static String printCharData(String name,int baseDamage, int baseHealth ){
+		return "Name: "+name+"\nDamage: "+baseDamage
+				+ "\nHealth: "+ baseHealth;
 	}
 }
+

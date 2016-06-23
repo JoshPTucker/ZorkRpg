@@ -20,7 +20,7 @@ public class GameManager {
 	System.out.println("Your game has started");
 	System.out.println("Please wait while your map is"
 			+ " being randomly generated");
-	MapGenerator.generateMap();
+	WorldGenerator.generateWorld();
 	System.out.println("Your map has been generated");
 	GameManager.printValidActions();
 	GameManager.createChar();
@@ -43,7 +43,7 @@ public class GameManager {
 		//System.out.println("Enter CHaracter race");
 		//String race=Keyboard.next();
 		Player p=new Player(name, "human", 50, 100, 0);
-		p.printCharData();
+		p.printCharData(name, 0, 0);
 	}
 	private static void runCombatEngine(){
 		CombatEngine.initCombat();
