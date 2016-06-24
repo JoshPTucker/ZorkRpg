@@ -22,7 +22,6 @@ public class GameManager {
 			+ " being randomly generated");
 	WorldGenerator.generateWorld();
 	System.out.println("Your map has been generated");
-	GameManager.printValidActions();
 	GameManager.createChar();
 	}
 	public void playGame(){
@@ -39,11 +38,26 @@ public class GameManager {
 	//Creates char
 	private static void createChar(){
 		System.out.println("Enter your characters name");
-		String name=keyboard.next();
+		String name=keyboard.nextLine();
 		//System.out.println("Enter CHaracter race");
 		//String race=Keyboard.next();
-		Player p=new Player(name, "human", 50, 100, 0);
-		p.printCharData(name, 0, 0);
+		int account=rand.nextInt();
+		Player p=new Player( name, "Human", 50, 100, 0,1, account);
+		System.out.println("Your name is "+p.getName());
+		System.out.println("You are a "+p.getSpecies());
+		System.out.println("Current level : "+p.getCharLevel());
+
+		
+//		System.out.println("Is your name correct?");
+//		String answer=keyboard.next();
+//		if(answer.toLowerCase().equals("yes")){
+//			System.out.println("Enjoy");
+//		}
+//		if(answer.toLowerCase().equals("no")){
+//			System.out.println("Enter new name");
+//			String nameChange=keyboard.nextLine();
+//			p.setName(nameChange);
+//		}
 	}
 	private static void runCombatEngine(){
 		CombatEngine.initCombat();

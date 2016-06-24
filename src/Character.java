@@ -1,21 +1,22 @@
 
 public abstract class Character {
 	
-	private String name;
+	protected String name;
 	private int baseDamage;
 	private int baseHealth;
-	private String type;
+	private int charLevel;
+	private String species;
 	private int baseDefense;
 	private boolean canAttack=true;
 	private boolean isAlive=true;
 	private int location;
-	
+	private int experience;
 
-	public Character(String name, String type, int baseDamage, int baseHealth, int baseDefense) {
+	public Character(String name, String species, int baseDamage, int baseHealth, int baseDefense,int charLevel) {
 		this.name=name;
 		this.baseDamage = baseDamage;
 		this.baseHealth = baseHealth;
-		this.type = type;
+		this.species = species;
 		this.baseDefense=baseDefense;
 	}
 
@@ -35,12 +36,12 @@ public abstract class Character {
 		this.baseHealth = baseHealth;
 	}
 
-	public String getType() {
-		return type;
+	public String getSpecies() {
+		return species;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setSpecies(String type) {
+		this.species = type;
 	}
 	public int getBaseDefense() {
 		return baseDefense;
@@ -88,9 +89,25 @@ public abstract class Character {
 		return name+"Has died";
 		
 	}
-	public static String printCharData(String name,int baseDamage, int baseHealth ){
+	public  String getCharData(){
 		return "Name: "+name+"\nDamage: "+baseDamage
 				+ "\nHealth: "+ baseHealth;
+	}
+
+	public int getCharLevel() {
+		return charLevel;
+	}
+
+	public void setCharLevel(int charLevel) {
+		this.charLevel = charLevel;
+	}
+
+	public int getExperience() {
+		return experience;
+	}
+
+	public  void setExperience(int experience) {
+	 this.experience = experience;
 	}
 }
 

@@ -3,18 +3,18 @@ public class Commands {
 	private String action;
 	private String object;
 	public Commands(Player p,String action,String object){
-		this.action=action;
-		this.object=object;
+		this.setAction(action);
+		this.setObject(object);
 	}
 	public static void performAction( String action, String object){
 		if(action.equals("attack")){
-			Player.attack(object);
+			attack(object);
 		}
 		else if(action.equals("move")){
-			Commands.move();
+			move();
 		}
 		else if (action.equals("take")){
-			Commands.takeItem(object);
+			takeItem(object);
 		}
 	}
 	
@@ -55,5 +55,17 @@ public class Commands {
 	}
 	public void showDeaths(){
 		
+	}
+	public String getObject() {
+		return object;
+	}
+	public void setObject(String object) {
+		this.object = object;
+	}
+	public String getAction() {
+		return action;
+	}
+	public void setAction(String action) {
+		this.action = action;
 	}
 }

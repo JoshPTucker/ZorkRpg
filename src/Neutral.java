@@ -1,8 +1,8 @@
 
 public class Neutral extends Npc {
 private boolean isVendor;
-	public Neutral(String name, String type, int baseDamage, int baseHealth, int baseDefense,boolean isVendor) {
-		super(name, type, baseDamage, baseHealth, baseDefense);
+	public Neutral(String name, String type, int baseDamage, int baseHealth, int baseDefense,int charLevel,boolean isVendor) {
+		super(name, type, baseDamage, baseHealth, baseDefense, charLevel);
 		// TODO Auto-generated constructor stub
 		this.isVendor=isVendor;
 	}

@@ -3,8 +3,8 @@ public class Npc extends Character {
 	private String voiceLine;
 	private boolean canAttkPlyr;
 	private boolean isImmune;
-	public Npc(String name, String type, int baseDamage, int baseHealth,int baseDefense){
-		super(name, type, baseDamage, baseHealth, baseDefense);
+	public Npc(String name, String type, int baseDamage, int baseHealth,int baseDefense,int charLevel){
+		super(name, type, baseDamage, baseHealth, baseDefense, charLevel);
 		// TODO Auto-generated constructor stub
 		//this.voiceLine=voiceLine;
 	}
