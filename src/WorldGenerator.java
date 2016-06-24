@@ -1,20 +1,29 @@
 import java.util.Random;
+import java.util.HashMap;
+import java.util.ArrayList;
+
 public class WorldGenerator {
-	private int amountOfRooms;
+	private int amountOfAreas;
 	
-	public  WorldGenerator(int amtORooms){
-		this.amountOfRooms=amtORooms;
+	public  WorldGenerator(int amtOfAreas){
+		this.amountOfAreas=amtOfAreas;
 	}
 
 	public int getAmountOfRooms() {
-		return amountOfRooms;
+		return amountOfAreas;
 	}
 
-	public void setAmountOfRooms(int amountOfRooms) {
-		this.amountOfRooms = amountOfRooms;
+	public void setAmountOfRooms(int amountOfAreas) {
+		this.amountOfAreas = amountOfAreas;
 	}
 	
 	public static void generateWorld(){
-	Random rand=new Random();
+	
+	}
+	public static void generatePlayerHouse(){
+		//ArrayList<Object>house=new ArrayList<Object>();
+	}
+	public static void generatePlayerStartingArea(){
+		
 	}
 }

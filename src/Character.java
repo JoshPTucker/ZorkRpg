@@ -109,5 +109,8 @@ public abstract class Character {
 	public  void setExperience(int experience) {
 	 this.experience = experience;
 	}
+	public static void respawn(){
+		
+	}
 }
 
