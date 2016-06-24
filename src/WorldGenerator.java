@@ -20,10 +20,5 @@ public class WorldGenerator {
 	public static void generateWorld(){
 	
 	}
-	public static void generatePlayerHouse(){
-		//ArrayList<Object>house=new ArrayList<Object>();
-	}
-	public static void generatePlayerStartingArea(){
-		
-	}
+
 }

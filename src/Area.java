@@ -1,11 +1,20 @@
+import java.util.Random;
+import java.util.HashMap;
+import java.util.ArrayList;
 
 public abstract class Area {
 	private String[]exits=new String[4];
 	private String areaName;
 	private String areaType;
 	private String description;
-	private int[][] size;
-	public Area(String areaName, String areaType, String description, int[][] size){
+	//private itemlist
+	//private enemy list
+	private int[][] coordinates;
+	boolean isVisited;
+	public Area(String areaName, String areaType, String description, int[][] coordinates){
+		
+	}
+	public Area(){
 		
 	}
 	public String[] getExits() {
@@ -38,5 +47,11 @@ public abstract class Area {
 	}
 	public void populateItems(){
 		
+	}
+	public int[][] getCoordinates() {
+		return coordinates;
+	}
+	public void setCoordinates(int[][] coordinates) {
+		this.coordinates = coordinates;
 	}
 }

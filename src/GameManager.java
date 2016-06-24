@@ -18,11 +18,15 @@ public class GameManager {
 	
 	public static void startGame(){
 	System.out.println("Your game has started");
+	GameManager.createChar();
 	System.out.println("Please wait while your map is"
 			+ " being randomly generated");
 	WorldGenerator.generateWorld();
-	System.out.println("Your map has been generated");
-	GameManager.createChar();
+	System.out.println("How many rooms would you like your house to have?");
+	int amtRooms=keyboard.nextInt();
+	PlayerHouse.generatePlayerHouse(amtRooms);
+//	System.out.println("Your house has been generated");
+//	System.out.println(PlayerHouse.displayPlayerHouse());
 	}
 	public void playGame(){
 		
