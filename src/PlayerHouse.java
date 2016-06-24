@@ -16,7 +16,7 @@ public class PlayerHouse {
 	}
 
 	public static void generatePlayerHouse(int numberRooms) {
-		if (numberRooms > 6 || numberRooms == 6) {
+		if (numberRooms >=6) {
 			setNumberOfRooms(numberRooms);
 			int i = 0;
 			Room room = new Room();

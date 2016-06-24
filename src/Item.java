@@ -53,7 +53,7 @@ public abstract class Item {
 	public void setDurability(int durability) {
 		this.durability = durability;
 	}
-	public void spawnItems(){
+	public void generateItems(){
 		
 	}
 }

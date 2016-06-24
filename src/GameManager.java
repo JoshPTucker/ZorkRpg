@@ -39,6 +39,9 @@ public class GameManager {
 	public static void saveGame(){
 		
 	}
+	public static void loadGame(){
+		
+	}
 	//Creates char
 	private static void createChar(){
 		System.out.println("Enter your characters name");
