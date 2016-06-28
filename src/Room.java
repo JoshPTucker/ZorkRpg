@@ -1,4 +1,4 @@
-
+import java.util.Random;
 public class Room extends Area {
 
 	public Room(String areaName, String areaType, String description, int[][] coordinates) {
@@ -8,7 +8,28 @@ public class Room extends Area {
 	public Room(){
 		
 	}
-	public void randomizeRooms(int x){
+	Random rand=new Random();
+	public void randomizeRooms(){
+		int x = 0;
+		int rn=rand.nextInt(99)+1;
+		if (rn>=98){
+			x=2;
+		}else if (rn<98&&rn>=94){
+			x=1;
+		}else if (rn<=20){
+			x=3;
+		}else if (rn>20&&rn<=30){
+			x=4;
+		}else if (rn>30&&rn<=60){
+			x=6;
+		}else if (rn>60&&rn<80){
+			x=5;
+		}else if (rn<90&&rn>=80){
+			x=7;
+		}else if (rn<94&&rn>=90){
+			x=8;
+		}
+		
 		
 		switch(x) {
 		case 1:makeDungeon();
@@ -23,10 +44,15 @@ public class Room extends Area {
 		break;
 		case 6:makeHallway();
 		break;
+		case 7:makeParlor();
+		break;
+		case 8: makeVault();
+		break;
 		default:makeFoyer();
 		break;
 		}
 	}
+	//one per house
 	public void makeFoyer(){
 		setAreaName("Foyer");
 		setDescription("Beautiful foyer");
@@ -41,6 +67,7 @@ public class Room extends Area {
 		populateEnemies();
 		populateItems();
 	}
+	
 	public void makeSecretRoom(){
 		setAreaName("Secret Room");
 		setDescription("dark secret room ");
@@ -76,4 +103,19 @@ public class Room extends Area {
 		populateEnemies();
 		populateItems();
 	}
+	public void makeParlor(){
+		setAreaName("Parlor");
+		setDescription("Spatious parlor");
+		setAreaType("room");
+		populateEnemies();
+		populateItems();
+	}
+	public void makeVault(){
+		setAreaName("Vault");
+		setDescription("Vault with piles of gold");
+		setAreaType("room");
+		populateEnemies();
+		populateItems();
+	}
+	
 }

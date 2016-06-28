@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class PlayerHouse {
 	static ArrayList<Room> playerHouse = new ArrayList<Room>();
 	private static int numberOfRooms;
-	static Random rn = new Random();
+	//static Random rn = new Random();
 
 	public PlayerHouse(String areaName, String areaType, String description, int[][] size, int numberRooms) {
 
@@ -23,7 +23,7 @@ public class PlayerHouse {
 			room.makeFoyer();
 			playerHouse.add(room);
 			while (i < numberRooms) {
-				room.randomizeRooms(rn.nextInt(6) + 1);
+				room.randomizeRooms();
 				i++;
 			}
 		} else {
@@ -33,7 +33,7 @@ public class PlayerHouse {
 			room.makeFoyer();
 			playerHouse.add(room);
 			while (i < numberRooms) {
-				room.randomizeRooms(rn.nextInt(6) + 1);
+				room.randomizeRooms();
 				i++;
 			}
 		}

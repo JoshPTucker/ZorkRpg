@@ -3,7 +3,8 @@ import java.util.HashMap;
 import java.util.ArrayList;
 
 public abstract class Area {
-	private String[]exits=new String[4];
+	//North, South, East, West, Up, Down
+	private String[]exits=new String[6];
 	private String areaName;
 	private String areaType;
 	private String description;
