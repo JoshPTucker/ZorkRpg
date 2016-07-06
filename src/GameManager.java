@@ -25,8 +25,8 @@ public class GameManager {
 	System.out.println("How many rooms would you like your house to have?");
 	int amtRooms=keyboard.nextInt();
 	PlayerHouse.generatePlayerHouse(amtRooms);
-//	System.out.println("Your house has been generated");
-//	System.out.println(PlayerHouse.displayPlayerHouse());
+	System.out.println("Your house has been generated");
+	System.out.println(PlayerHouse.displayPlayerHouse());
 	}
 	public void playGame(){
 		

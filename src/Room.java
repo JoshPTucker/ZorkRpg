@@ -1,8 +1,8 @@
 import java.util.Random;
 public class Room extends Area {
 
-	public Room(String areaName, String areaType, String description, int[][] coordinates) {
-		super(areaName, areaType, description, coordinates);
+	public Room(String areaName, String areaType, String description, int xCoord,int yCoord) {
+		super(areaName, areaType, description, yCoord, yCoord);
 		// TODO Auto-generated constructor stub
 	}
 	public Room(){
@@ -57,65 +57,66 @@ public class Room extends Area {
 		setAreaName("Foyer");
 		setDescription("Beautiful foyer");
 		setAreaType("room");
-		populateEnemies();
-		populateItems();
+		
+//		populateEnemies();
+//		populateItems();
 	}
 	public void makeDungeon(){
 		setAreaName("Dungeon");
 		setDescription("Cold scary dungeon");
 		setAreaType("room");
-		populateEnemies();
-		populateItems();
+//		populateEnemies();
+//		populateItems();
 	}
 	
 	public void makeSecretRoom(){
 		setAreaName("Secret Room");
 		setDescription("dark secret room ");
 		setAreaType("room");
-		populateEnemies();
-		populateItems();
+//		populateEnemies();
+//		populateItems();
 	}
 	public void makeKitchen(){
 		setAreaName("Kitchen");
 		setDescription("messy kitchen ");
 		setAreaType("room");
-		populateEnemies();
-		populateItems();
+//		populateEnemies();
+//		populateItems();
 	}
 	public void makeLibrary(){
 		setAreaName("Library");
 		setDescription("books are strewn about ");
 		setAreaType("room");
-		populateEnemies();
-		populateItems();
+//		populateEnemies();
+//		populateItems();
 	}
 	public void makeBedroom(){
 		setAreaName("Bedroom");
 		setDescription("bed is messed");
 		setAreaType("room");
-		populateEnemies();
-		populateItems();
+		//populateEnemies();
+		//populateItems();
 	}
 	public void makeHallway(){
 		setAreaName("Hallway");
 		setDescription("Long hallway");
 		setAreaType("room");
-		populateEnemies();
-		populateItems();
+		//populateEnemies();
+		//populateItems();
 	}
 	public void makeParlor(){
 		setAreaName("Parlor");
 		setDescription("Spatious parlor");
 		setAreaType("room");
-		populateEnemies();
-		populateItems();
+		//populateEnemies();
+		//populateItems();
 	}
 	public void makeVault(){
 		setAreaName("Vault");
 		setDescription("Vault with piles of gold");
 		setAreaType("room");
-		populateEnemies();
-		populateItems();
+		//populateEnemies();
+		//populateItems();
 	}
 	
 }
